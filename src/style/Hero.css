@@ -1,0 +1,107 @@
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 5rem;
+    max-width: 120rem;
+    margin: 0 9rem;
+}
+
+.hero-topdata{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: rgb(242, 16, 219);
+}
+
+.hero-heading{
+    text-transform:uppercase;
+    font-size: 3rem;
+    animation: mymove 1s ease-in-out;
+    position: relative;
+}
+/* animation*/
+#animation{
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from{left: -100px;}
+    to{left: 3px;}
+}
+
+.hero-para{
+    margin-top: .6rem;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+
+.hero-btn{
+    max-width: 16rem;
+    padding: 1rem;
+    background-color: rgb(253, 3, 3);
+    color: rgb(11, 11, 11);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    transition: all 0.4s; 
+}
+.hero-btn>a{
+    text-decoration: none;
+}
+.hero-btn:hover{
+    transform: scale(0.89);
+    /* transform: translateX(10px);
+    transition: all 0.4s;  copy chat app */
+
+}
+
+
+.right-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-gif{
+    width: 45rem;
+    height: 35vh;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+@media (max-width:940px) {
+    .hero-container{
+        margin: 0 1rem;
+        text-align: center;
+    }
+    .hero-heading{
+        font-size: 0.5;
+    }
+    .hero-btn{
+        max-width: 9rem;
+        padding: 1rem 0;
+        background-color: rgb(253, 3, 3);
+        color: rgb(11, 11, 11);
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 1.3rem;
+        transition: all 0.4s;
+        margin: auto; 
+
+    }
+    .hero-para{
+        text-align:start;
+        font-size: large;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+    }
+}

@@ -1,0 +1,24 @@
+.header{
+    padding: 0 1.8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+}
+
+.logo{
+    height: 4rem;
+    transition: all 0.4s;
+}
+.logo:hover{
+    transform: translate(1rem);
+}
+
+@media (max-width:940px) {
+    header{
+        margin-top: -50px;
+    }
+}
+
+

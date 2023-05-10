@@ -1,0 +1,28 @@
+.img-container{
+    display: block;
+    flex-direction: column;
+}
+.error-img{
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.btn{
+    margin-left: 50%;
+    margin-top: 3rem;
+    padding: 1rem;text-transform: uppercase;
+    background-color: crimson;
+    font-size: 1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 1rem;
+}
+.btn>a{
+    text-decoration: none;
+}
+
+.btn:hover{
+    transform: scale(0.8);
+}

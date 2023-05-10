@@ -1,0 +1,60 @@
+.navbar-list{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+.navbar-list>li>a{
+   text-decoration:  none;
+   color: rgb(249, 13, 13);
+}
+
+.navbar-list>li>a:hover{
+    color: rgb(18, 218, 249);
+    transition: color 0.3s linear;
+    border: 1px solid rgb(189, 228, 243);
+    border-radius:0.2rem;
+    padding: 0.2rem;
+}
+
+#click{
+    display: none;
+}
+
+nav .menu-btn{
+    font-size: 1.5rem;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:940px) {
+    nav .menu-btn{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    navbar-list,ul{
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        background-color: rgb(10, 10, 10);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    navbar-list,ul li{
+        margin-top: 4px;
+        color: white;
+        margin-top: 30px;
+
+    }
+
+}
